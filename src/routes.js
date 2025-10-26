@@ -10,7 +10,6 @@ const routes = Router();
 
 routes.use(homeController);
 
-// TODOs add other controllers here.
 routes.use('/users', userController);
 routes.use('/myths', mythController);
 

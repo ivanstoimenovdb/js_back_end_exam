@@ -13,7 +13,6 @@ export function authMiddleware(req, res, next){
         req.user = decodeToken;
         req.isAuthenticated = true;
 
-        // Add to handlebars context.
         res.locals.user = decodeToken;
         res.locals.isAuthenticated = true;
 

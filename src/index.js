@@ -48,9 +48,6 @@ app.use(cookieParser());
 
 app.use(express.urlencoded({ extended: false }));
 
-// Add json parser.
-// app.use(express.json());
-
 app.use(authMiddleware);
 
 app.use(routes);
