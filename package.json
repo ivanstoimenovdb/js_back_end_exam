@@ -1,0 +1,31 @@
+{
+  "name": "exam_prep_back_end_js_skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for exam - js back-end.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanstoimenovdb/exam_prep_back_end_js_skeleton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanstoimenovdb/exam_prep_back_end_js_skeleton/issues"
+  },
+  "homepage": "https://github.com/ivanstoimenovdb/exam_prep_back_end_js_skeleton#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.2"
+  }
+}

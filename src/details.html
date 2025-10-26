@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/styles.css" />
+    <title>Details Page</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Report</a>
+
+                </div>
+
+                <!-- Logged-in users -->
+                <div class="user">
+                    <a href="#">Add Myth</a>
+                    <a href="#">Logout</a>
+                </div>
+
+                    <!-- Guest users -->
+                    <div class="guest">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div>
+            </nav>
+        </header>
+
+        <main class="details">
+            <!-- Details page -->
+            <section id="details">
+                <div id="details-wrapper">
+                    <p id="details-title">Name: Thor</p>
+                    <div id="img-wrapper">
+                        <img src="./static/images/thor.webp" alt="Thor" />
+                    </div>
+                    <div id="info-wrapper">
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        Origin: <span id="details-origin">Norse Mythology</span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Role: <span id="details-role">God of Thunder and Storms</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Symbol / Attribute: <span id="details-symbol">Mjolnir (Hammer), Belt of
+                                            Strength</span></p>
+                                </td>
+                                <td>
+                                    <p>Era: <span id="details-era">Viking Age Legends</span></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Description:
+                            <span id="details-description">
+                                Thor is a hammer-wielding god associated with thunder, lightning, storms, oak trees,
+                                strength,
+                                the protection of mankind, and also hallowing and fertility. He is one of the most
+                                important
+                                figures in Norse mythology and a central character in many myths and sagas.
+                            </span>
+                        </p>
+                    </div>
+
+                    <!--Edit and Delete are only for creator-->
+                    <div id="action-buttons">
+                        <a href="#" id="edit-btn">Edit</a>
+                        <a href="#" id="delete-btn">Delete</a>
+                        <a href="#" id="like-btn">Like</a>
+                        <p id="already-liked">You've already liked this legend!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>SoftUni JS Back-End Exam 2025 &copy;</footer>
+    </div>
+</body>
+
+</html>

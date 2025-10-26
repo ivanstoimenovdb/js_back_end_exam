@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/styles.css" />
+    <title>Report Page</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Report</a>
+                </div>
+
+                <!-- Logged-in users -->
+                <div class="user">
+                    <a href="#">Add Myth</a>
+                    <a href="#">Logout</a>
+                </div>
+
+                <!-- Guest users -->
+                <div class="guest">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="report-section">
+            <section id="report-section">
+                <h2>Report</h2>
+                <ul class="report-list">
+                    <!-- Display a li with information about every post (if any)-->
+                    <ul id="report-list">
+                        <li class="report-card">
+                            <img src="./static/images/anubis.webp" />
+                            <h3>Anubis</h3>
+                            <p><strong>Origin:</strong> <br> Egyptian Mythology</p>
+                            <p><strong>Role:</strong> <br> God of the Dead</p>
+                            <p><strong>Symbol:</strong> <br>Jackal</p>
+                            <p><strong>Era:</strong> <br> Ancient Egypt</p>
+                            <p><strong>Created on:</strong> <br>19/09/2025</p>
+                            <p><strong>Owner:</strong> <br> user@example.com</p>
+                        </li>
+
+                        <li class="report-card">
+                            <img src="./static/images/thor.webp" />
+                            <h3>Thor</h3>
+                            <p><strong>Origin:</strong> <br> Norse Mythology</p>
+                            <p><strong>Role:</strong> <br> God of Thunder</p>
+                            <p><strong>Symbol:</strong> <br> Mjolnir (Hammer)</p>
+                            <p><strong>Era:</strong> <br> Viking Age Legends</p>
+                            <p><strong>Created on:</strong> <br>20/09/2025</p>
+                            <p><strong>Owner:</strong> <br> user2@example.com</p>
+                        </li>
+
+
+                        <li class="report-card">
+                            <img src="./static/images/zeus.webp" />
+                            <h3>Zeus</h3>
+                            <p><strong>Origin:</strong> <br> Greek Mythology</p>
+                            <p><strong>Symbol:</strong> <br> Thunderbolt, Eagle, Oak</p>
+                            <p><strong>Era:</strong> <br> Classical Greece</p>
+                            <p><strong>Created on:</strong> <br> 21/09/2025</p>
+                            <p><strong>Owner:</strong> <br> user5@example.com</p>
+                        </li>
+
+                    </ul>
+
+
+                </ul>
+
+                <!-- Display an h2 if there are no posts -->
+                <!-- <h2 id="no-post">There are no myths and legends! </h2> -->
+
+                <!-- Display an h2 if an error occurs -->
+                <!-- <h2 id="no-post">Error loading report! </h2> -->
+
+            </section>
+        </main>
+
+
+        <footer>SoftUni JS Back-End Exam 2025 &copy;</footer>
+    </div>
+</body>
+
+</html>
