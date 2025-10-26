@@ -39,4 +39,16 @@ export function getLatest() {
     return Myth.find().sort({ _id: -1 }).limit(3);
 }
 
+// Delete functionality.
+export async function remove(mythId, userId){
+    const myth = await Myth.findById(mythId);
+
+    if(!myth.owner.equals(userId)){
+        throw new Error('Cannot delete without ownership.');
+    }
+
+    return Myth.findByIdAndDelete(mythId);
+}
+
+
 

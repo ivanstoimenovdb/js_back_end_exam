@@ -57,7 +57,7 @@ mythController.get('/:mythId/like', isAuth, async (req, res) => {
     res.redirect(`/myths/${mythId}/details`);
 })
 
-// Edit myth functionality.
+// Edit myth functionalities.
 mythController.get('/:mythId/edit', isAuth, async (req, res) => {
     const mythId = req.params.mythId;
 
@@ -96,5 +96,19 @@ mythController.post('/:mythId/edit', isAuth, async (req, res) => {
 
 })
 
+// Delete functionality.
+mythController.get('/:mythId/delete', isAuth, async (req, res) => {
+    const mythId = req.params.mythId;
+    const userId = req.user.id;
+
+    try {
+        await mythService.remove(mythId, userId);
+
+        res.redirect('/myths');
+    } catch (err) {
+        res.redirect('/');
+    }
+
+})
 
 export default mythController;
