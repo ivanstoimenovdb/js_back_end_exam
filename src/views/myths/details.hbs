@@ -37,8 +37,8 @@
             <!--Edit and Delete are only for creator-->
             <div id="action-buttons">
                 {{#if isOwner}}
-                <a href="#" id="edit-btn">Edit</a>
-                <a href="#" id="delete-btn">Delete</a>
+                <a href="/myths/{{myth.id}}/edit" id="edit-btn">Edit</a>
+                <a href="/myths/{{myth.id}}/delete" id="delete-btn">Delete</a>
                 {{else}}
                 {{#if isLiked}}
                 <p id="already-liked">You've already liked this legend!</p>

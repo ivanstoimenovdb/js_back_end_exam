@@ -42,7 +42,7 @@ JavaScript exam.
 - [X] Get all myths service.
 - [X] Show dynamic myths.
 
-### Blog details.
+### Myth details.
 - [X] Fix details link in myths page.
 - [] Fix details link in home page.
 - [X] show static details page.
@@ -52,8 +52,7 @@ JavaScript exam.
 - [X] Hide buttons if not logged.
 - [X] Show edit and delete button if author.
 - [X] Show follow and already following buttons  if logged.
-<!-- - [] Show dynamic followers.
--   [] Add followers in myth relations (module).
--   [] Add follow service method in blog service.
--   [] Add follow get action.
--   [] Fix follow link. -->
+-   [X] Add like in myth relations (module).
+-   [X] Add like service method in blog service.
+-   [X] Add like get action.
+-   [X] Fix like link. 

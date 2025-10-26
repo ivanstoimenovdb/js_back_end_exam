@@ -9,32 +9,17 @@
     </section>
 
     <section id="last-added">
+        {{#each myths}}
         <div>
-            <img src="/images/zeus.webp">
+            <img src="{{image}}">
             <div id="text-content">
-                <p>Name: Zeus</p>
-                <p>Origin: Greek</p>
+                <p>Name: {{name}}</p>
+                <p>Origin: {{origin}}</p>
             </div>
-            <a class="details-btn" href="#">Details</a>
+            <a class="details-btn" href="/myths/{{id}}/details">Details</a>
         </div>
-        <div>
-            <img src="/images/thor.webp">
-            <div id="text-content">
-                <p>Name: Thor</p>
-                <p>Origin: Norse</p>
-            </div>
-            <a class="details-btn" href="#">Details</a>
-        </div>
-        <div>
-            <img src="/images/anubis.webp">
-            <div id="text-content">
-                <p>Name: Anubis</p>
-                <p>Origin: Egyptian</p>
-            </div>
-            <a class="details-btn" href="#">Details</a>
-        </div>
-
-        <!-- <p class="no-post">There are no myths and legends!</p> -->
-
+        {{else}}
+        <p class="no-post">There are no myths and legends!</p>
+        {{/each}}
     </section>
 </main>
