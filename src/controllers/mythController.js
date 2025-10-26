@@ -34,5 +34,27 @@ mythController.get(('/'), async (req, res) => {
     res.render('myths', {myths});
 })
 
+// Details myth:
+// Show details.
+mythController.get('/:mythId/details', async (req, res) =>{
+    const mythId = req.params.mythId;
+    const myth = await mythService.getOne(mythId);
+    const userId = req.user?.id;
+    const isOwner = myth.owner.equals(userId);
+
+    const isLiked = myth.likedList.some( like => like.equals(userId));
+
+    res.render('myths/details', {myth, isOwner, isLiked})
+})
+
+mythController.get('/:mythId/like', isAuth, async (req, res) =>{
+    const mythId = req.params.mythId;
+    const userId = req.user.id;
+
+    await mythService.likePost(mythId, userId);
+
+    res.redirect(`/myths/${mythId}/details`);
+})
+
 
 export default mythController;

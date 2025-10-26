@@ -38,6 +38,22 @@ JavaScript exam.
 ###  Myth Dashboard Page.
 - [X] Fix navigation link.
 - [X] Add catalog view.
-- [X] Add catalog get action with static blogs.
-- [] Get all blogs service.
-- [] Show dynamic blogs.
+- [X] Add catalog get action with static myths.
+- [X] Get all myths service.
+- [X] Show dynamic myths.
+
+### Blog details.
+- [X] Fix details link in myths page.
+- [] Fix details link in home page.
+- [X] show static details page.
+- [X] Add getOne method in myth service.
+- [X] Show dynamic details page (without author and followers).
+- [X] Show dynamic author.
+- [X] Hide buttons if not logged.
+- [X] Show edit and delete button if author.
+- [X] Show follow and already following buttons  if logged.
+<!-- - [] Show dynamic followers.
+-   [] Add followers in myth relations (module).
+-   [] Add follow service method in blog service.
+-   [] Add follow get action.
+-   [] Fix follow link. -->
